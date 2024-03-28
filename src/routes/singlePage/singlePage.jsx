@@ -2,6 +2,7 @@ import "./singlePage.scss";
 import Slider from "../../components/slider/Slider";
 import Map from "../../components/map/Map";
 import { singlePostData, userData } from "../../lib/dummydata";
+import { FaBars, FaBookOpen, FaBus, FaHistory, FaHotel, FaPersonBooth, FaServer, FaServicestack, FaStore } from "react-icons/fa";
 
 function SinglePage() {
   return (
@@ -17,7 +18,7 @@ function SinglePage() {
                   <img src="/pin.png" alt="" />
                   <span>{singlePostData.address}</span>
                 </div>
-                <div className="price">$ {singlePostData.price}</div>
+                <div className="price"> {singlePostData.price} Victims</div>
               </div>
               <div className="user">
                 <img src={userData.img} alt="" />
@@ -32,25 +33,36 @@ function SinglePage() {
         <div className="wrapper">
           <p className="title">General</p>
           <div className="listVertical">
-            <div className="feature">
-              <img src="/utility.png" alt="" />
+          <div className="feature">
+              <FaPersonBooth />
+              {/* <img src="/utility.png" alt="" /> */}
               <div className="featureText">
-                <span>Utilities</span>
-                <p>Renter is responsible</p>
+                <span>Commemoration Day</span>
+                <p>11th April</p>
               </div>
             </div>
             <div className="feature">
-              <img src="/pet.png" alt="" />
+              <FaPersonBooth />
+              {/* <img src="/utility.png" alt="" /> */}
               <div className="featureText">
-                <span>Pet Policy</span>
-                <p>Pets Allowed</p>
+                <span>Guided Tours</span>
+                <p>Available during the commemoration Days</p>
               </div>
             </div>
             <div className="feature">
-              <img src="/fee.png" alt="" />
+              <FaStore />
+              {/* <img src="/pet.png" alt="" /> */}
               <div className="featureText">
-                <span>Property Fees</span>
-                <p>Must have 3x the rent in total household income</p>
+                <span>Memorial Resources</span>
+                <p>Available on working days</p>
+              </div>
+            </div>
+            <div className="feature">
+              <FaServer />
+             {/*  <img src="/fee.png" alt="" /> */}
+              <div className="featureText">
+                <span>Visitor Services</span>
+                <p>Available</p>
               </div>
             </div>
           </div>
@@ -61,32 +73,37 @@ function SinglePage() {
               <span>80 sqft</span>
             </div>
             <div className="size">
-              <img src="/bed.png" alt="" />
-              <span>2 beds</span>
+              <FaHistory />
+              {/* <img src="/bed.png" alt="" /> */}
+              <span>2 Testimonies</span>
             </div>
             <div className="size">
-              <img src="/bath.png" alt="" />
-              <span>1 bathroom</span>
+              <FaBookOpen />
+              {/* <img src="/bath.png" alt="" /> */}
+              <span>1 Archive</span>
             </div>
           </div>
           <p className="title">Nearby Places</p>
           <div className="listHorizontal">
             <div className="feature">
-              <img src="/school.png" alt="" />
+              <FaHotel />
+              {/* <img src="/school.png" alt="" /> */}
               <div className="featureText">
-                <span>School</span>
+                <span>Hotel</span>
                 <p>250m away</p>
               </div>
             </div>
             <div className="feature">
-              <img src="/pet.png" alt="" />
+              <FaBus />
+              {/* <img src="/pet.png" alt="" /> */}
               <div className="featureText">
                 <span>Bus Stop</span>
                 <p>100m away</p>
               </div>
             </div>
             <div className="feature">
-              <img src="/fee.png" alt="" />
+              <FaBars />
+              {/* <img src="/fee.png" alt="" /> */}
               <div className="featureText">
                 <span>Restaurant</span>
                 <p>200m away</p>

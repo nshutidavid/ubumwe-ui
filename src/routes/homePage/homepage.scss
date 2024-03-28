@@ -3,9 +3,12 @@
 .homePage {
   display: flex;
   height: 100%;
+  
 
   .textContainer {
     flex: 3;
+    /* overflow-y: auto; */
+    
 
     .wrapper {
       padding-right: 100px;
@@ -21,6 +24,7 @@
 
       @include md{
         padding: 0;
+        /* margin-top: -80px; */
       }
 
       @include sm{
@@ -28,11 +32,15 @@
       }
 
       .title {
-        font-size: 64px;
+        font-size: 54px;
 
         @include lg {
           font-size: 48px;
         }
+       /*  @include md{
+          margin-top: -80px;
+          
+        } */
       }
 
       .boxes {
@@ -71,7 +79,7 @@
     }
 
     img {
-      width: 115%;
+      width: 95%;
       position: absolute;
       right: 0;
 

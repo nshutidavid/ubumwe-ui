@@ -5,6 +5,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+ 
 
   a {
     transition: all 0.4s ease;
@@ -12,7 +13,7 @@ nav {
     @include sm {
       display: none;
     }
-
+    
     &:hover {
       scale: 1.05;
     }
@@ -29,16 +30,18 @@ nav {
       font-size: 20px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 6px;
 
-      img {
+      .FaHandsHelping {
         width: 28px;
+              
       }
 
       span {
         @include md {
           display: none;
         }
+        
 
         @include sm {
           display: initial;

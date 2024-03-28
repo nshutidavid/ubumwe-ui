@@ -1,22 +1,24 @@
 import { useState } from "react";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
+import { FaHandsHelping } from 'react-icons/fa';
 
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const user = true;
+  const user = false;
   return (
     <nav>
       <div className="left">
         <a href="/" className="logo">
-          <img src="/logo.png" alt="" />
+          {/* <img src="/logo.png" alt="" /> */}
+          <FaHandsHelping className='FaHandsHelping' />
           <span>Ubumwe</span>
         </a>
         <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
-        <a href="/">Agents</a>
+        <a href="/list">Memorials</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
       </div>
       <div className="right">
         {user ? (
@@ -25,7 +27,7 @@ function Navbar() {
               src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
             />
-            <span>John Doe</span>
+            <span>Nshuti David</span>
             <Link to="/profile" className="profile">
               <div className="notification">3</div>
               <span>Profile</span>
@@ -48,9 +50,9 @@ function Navbar() {
         </div>
         <div className={open ? "menu active" : "menu"}>
           <a href="/">Home</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
-          <a href="/">Agents</a>
+          <a href="/list">Memorials</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>          
           <a href="/">Sign in</a>
           <a href="/">Sign up</a>
         </div>

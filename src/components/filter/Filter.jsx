@@ -4,7 +4,7 @@ const Filter = () => {
   return (
     <div className="filter">
       <h1>
-        Search results for <b>London</b>
+        Search results for <b>Kigali Memorial site</b>
       </h1>
       <div className="top">
         <div className="item">
@@ -13,7 +13,7 @@ const Filter = () => {
             type="text"
             id="city"
             name="city"
-            placeholder="City Location"
+            placeholder="Memorial Location"
           />
         </div>
       </div>

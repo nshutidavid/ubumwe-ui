@@ -1,0 +1,71 @@
+@import "../../responsive.scss";
+
+.about-page {
+    display: flex;
+    height: 100%;
+  
+    @include md {
+      flex-direction: column;
+     
+    }
+  
+    .aboutContainer {
+      flex: 3;
+      height: 100%;
+      /* overflow-y: scroll; */
+  
+      @include md {
+        flex: none;
+        height: max-content;
+        margin-bottom: 50px;
+      }
+  
+      .wrapper {
+        /* padding-right: 50px; */
+        padding-right: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        height: 100%;
+  
+        @include lg {
+          padding-right: 20px;
+        }
+        @include md {
+          padding-right: 0px;
+        }
+  
+        .about-content {
+          margin-top: 30px;
+  
+          h2 {
+            font-weight: 400;
+            transition: color 0.3s ease;
+          }
+  
+          p {
+            color: #555;
+            line-height: 20px;
+            margin-bottom: 20px;
+            transition: opacity 1.3s ease;
+          }
+        }
+      }
+    }
+    .about-image {
+        flex: 2;
+        background-color: #fcf5f3;
+        position: relative;
+        display: flex;
+        align-items: center;
+  
+      @include md {
+        flex: none;
+        height: max-content;
+        display: none;
+      }
+    }
+  }
+  
+

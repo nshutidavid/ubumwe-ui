@@ -10,8 +10,8 @@ function Pin({ item }) {
           <img src={item.img} alt="" />
           <div className="textContainer">
             <Link to={`/${item.id}`}>{item.title}</Link>
-            <span>{item.bedroom} bedroom</span>
-            <b>$ {item.price}</b>
+            <span>{item.address}</span>
+            <b> {item.price} Victims</b>
           </div>
         </div>
       </Popup>

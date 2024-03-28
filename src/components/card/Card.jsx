@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./card.scss";
+import { FaArchive, FaBookOpen, FaHistory, FaPeopleArrows, FaSpeakap } from "react-icons/fa";
 
 
 function Card({ item }) {
@@ -16,16 +17,18 @@ function Card({ item }) {
           <img src="/pin.png" alt="" />
           <span>{item.address}</span>
         </p>
-        <p className="price">$ {item.price}</p>
+        <p className="price"> {item.price} Victims</p>
         <div className="bottom">
           <div className="features">
             <div className="feature">
-              <img src="/bed.png" alt="" />
-              <span>{item.bedroom} bedroom</span>
+            <FaHistory />
+             {/*  <img src="/bed.png" alt="" /> */}
+              <span>{item.bedroom} Testimonies</span>
             </div>
             <div className="feature">
-              <img src="/bath.png" alt="" />
-              <span>{item.bathroom} bathroom</span>
+              <FaBookOpen />
+              {/* <img src="/bath.png" alt="" /> */}
+              <span>{item.bathroom} Archive</span>
             </div>
           </div>
           <div className="icons">
