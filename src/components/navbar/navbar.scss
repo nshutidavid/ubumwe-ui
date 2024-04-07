@@ -1,5 +1,12 @@
 @import "../../responsive.scss";
 
+// Define a mixin to set the Caveat font styles
+@mixin red-hat-display-font($weight, $italic) {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: $weight;
+  font-style:  normal;
+}
+
 nav {
   height: 100px;
   display: flex;
@@ -27,17 +34,24 @@ nav {
 
     .logo {
       font-weight: bold;
-      font-size: 20px;
+      font-size: 24px;
       display: flex;
       align-items: center;
-      gap: 6px;
+     /*  gap: 2px; */
 
       .FaHandsHelping {
-        width: 28px;
+        width: 32px;
+        margin-right: 0;
+        display: inline-block; 
+        
               
       }
 
       span {
+        display: inline-block; // Ensure inline-block to remove any extra spacing
+        margin: 0; // Remove any default margin
+        padding: 0; // Remove any default padding
+        @include red-hat-display-font(400, false);
         @include md {
           display: none;
         }

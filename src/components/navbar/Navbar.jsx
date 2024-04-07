@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
-import { FaHandsHelping } from 'react-icons/fa';
+import { FaHandsHelping, FaLightbulb } from 'react-icons/fa';
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -11,9 +11,9 @@ function Navbar() {
     <nav>
       <div className="left">
         <a href="/" className="logo">
-          {/* <img src="/logo.png" alt="" /> */}
-          <FaHandsHelping className='FaHandsHelping' />
-          <span>Ubumwe</span>
+           <img src="/logoo.png" alt="" className='FaHandsHelping'/> 
+          {/* <FaLightbulb className='FaHandsHelping' /> */}
+          <span>94Memorials</span>
         </a>
         <a href="/">Home</a>
         <a href="/list">Memorials</a>
