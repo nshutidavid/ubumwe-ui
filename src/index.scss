@@ -2,12 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: #102a43;
 
 }
 
-a {
+a,p,h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
-    color: inherit;
+    color: #f0f4f8;
 }
 body{
     font-family: "Lato", sans-serif;

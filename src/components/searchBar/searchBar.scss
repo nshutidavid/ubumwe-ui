@@ -73,9 +73,10 @@
     }
 
     button {
-      border: none;
+      border:1px solid #fece51;
       cursor: pointer;
-      background-color: #fece51;
+      background-color:	transparent;
+      /* border-color: #fece51; */
       flex: 1;
 
       @include sm{

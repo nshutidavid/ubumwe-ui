@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./searchBar.scss";
+import { FaSearch } from "react-icons/fa";
 
 const types = ["Standard Tour", "Premium Tour"];
 
@@ -45,6 +46,7 @@ const SearchBar = () => {
               placeholder="Max Visit Cost"
             />
             <button>
+              {/* <FaSearch /> */}
               <img src="/search.png" alt="" />
             </button>
           </form>

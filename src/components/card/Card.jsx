@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./card.scss";
-import { FaArchive, FaBookOpen, FaHistory, FaPeopleArrows, FaSpeakap } from "react-icons/fa";
+import { FaArchive, FaBookOpen, FaHistory, FaPeopleArrows, FaSave, FaSms, FaSpeakap } from "react-icons/fa";
 
 
 function Card({ item }) {
@@ -33,10 +33,12 @@ function Card({ item }) {
           </div>
           <div className="icons">
             <div className="icon">
-              <img src="/save.png" alt="" />
+              <FaSave className="iconImage"/>
+              {/* <img src="/save.png" alt="" /> */}
             </div>
             <div className="icon">
-              <img src="/chat.png" alt="" />
+              <FaSms className="iconImage"/>
+              {/* <img src="/chat.png" alt="" /> */}
             </div>
           </div>
         </div>

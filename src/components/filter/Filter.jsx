@@ -22,18 +22,20 @@ const Filter = () => {
           <label htmlFor="type">Type</label>
           <select name="type" id="type">
             <option value="">any</option>
-            <option value="buy">Buy</option>
-            <option value="rent">Rent</option>
+            <option value="buy">Standard Tour</option>
+            <option value="rent">Premium Tour</option>
+
           </select>
         </div>
         <div className="item">
-          <label htmlFor="property">Property</label>
+          <label htmlFor="property">Location</label>
           <select name="property" id="property">
             <option value="">any</option>
-            <option value="apartment">Apartment</option>
-            <option value="house">House</option>
-            <option value="condo">Condo</option>
-            <option value="land">Land</option>
+            <option value="apartment">Kigali</option>
+            <option value="house">Northern Province</option>
+            <option value="condo">Southern Province</option>
+            <option value="land">Western Province</option>
+            <option value="land">Eastern Province</option>
           </select>
         </div>
         <div className="item">

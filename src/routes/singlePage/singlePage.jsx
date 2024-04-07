@@ -34,7 +34,7 @@ function SinglePage() {
           <p className="title">General</p>
           <div className="listVertical">
           <div className="feature">
-              <FaPersonBooth />
+              <FaPersonBooth className="imageFeature"/>
               {/* <img src="/utility.png" alt="" /> */}
               <div className="featureText">
                 <span>Commemoration Day</span>
@@ -42,7 +42,7 @@ function SinglePage() {
               </div>
             </div>
             <div className="feature">
-              <FaPersonBooth />
+              <FaPersonBooth className="imageFeature" />
               {/* <img src="/utility.png" alt="" /> */}
               <div className="featureText">
                 <span>Guided Tours</span>
@@ -50,7 +50,7 @@ function SinglePage() {
               </div>
             </div>
             <div className="feature">
-              <FaStore />
+              <FaStore className="imageFeature"/>
               {/* <img src="/pet.png" alt="" /> */}
               <div className="featureText">
                 <span>Memorial Resources</span>
@@ -58,7 +58,7 @@ function SinglePage() {
               </div>
             </div>
             <div className="feature">
-              <FaServer />
+              <FaServer className="imageFeature"/>
              {/*  <img src="/fee.png" alt="" /> */}
               <div className="featureText">
                 <span>Visitor Services</span>
@@ -73,12 +73,12 @@ function SinglePage() {
               <span>80 sqft</span>
             </div>
             <div className="size">
-              <FaHistory />
+              <FaHistory className="imageSize"/>
               {/* <img src="/bed.png" alt="" /> */}
               <span>2 Testimonies</span>
             </div>
             <div className="size">
-              <FaBookOpen />
+              <FaBookOpen className="imageSize"/>
               {/* <img src="/bath.png" alt="" /> */}
               <span>1 Archive</span>
             </div>
@@ -86,7 +86,7 @@ function SinglePage() {
           <p className="title">Nearby Places</p>
           <div className="listHorizontal">
             <div className="feature">
-              <FaHotel />
+              <FaHotel className="imagePlace"/>
               {/* <img src="/school.png" alt="" /> */}
               <div className="featureText">
                 <span>Hotel</span>
@@ -94,7 +94,7 @@ function SinglePage() {
               </div>
             </div>
             <div className="feature">
-              <FaBus />
+              <FaBus className="imagePlace"/>
               {/* <img src="/pet.png" alt="" /> */}
               <div className="featureText">
                 <span>Bus Stop</span>
@@ -102,7 +102,7 @@ function SinglePage() {
               </div>
             </div>
             <div className="feature">
-              <FaBars />
+              <FaBars className="imagePlace"/>
               {/* <img src="/fee.png" alt="" /> */}
               <div className="featureText">
                 <span>Restaurant</span>

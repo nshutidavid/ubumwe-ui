@@ -9,12 +9,22 @@ function Map({items}){
     <MapContainer center={[-1.9403, 29.8739]} zoom={8} scrollWheelZoom={false} className='map'>
     <TileLayer
       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      url="https://cartocdn_{s}.global.ssl.fastly.net/base-midnight/{z}/{x}/{y}.png" // Dark map tile URL
+      //https://cartocdn_{s}.global.ssl.fastly.net/base-midnight/{z}/{x}/{y}.png
     />
     {items.map(item => (
       <Pin item={item} key={item.id} />
     ))}
   </MapContainer>
+ /*    <MapContainer center={[-1.9403, 29.8739]} zoom={8} scrollWheelZoom={false} className='map'>
+    <TileLayer
+      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    />
+    {items.map(item => (
+      <Pin item={item} key={item.id} />
+    ))}
+  </MapContainer> */
   
   )
 }

@@ -15,6 +15,7 @@
   
       label {
         font-size: 10px;
+        color: 	#bcccdc;
       }
   
       input,
@@ -22,6 +23,7 @@
         width: 100px;
         padding: 10px;
         border: 1px solid #e0e0e0;
+        color: 	#bcccdc;
         border-radius: 5px;
         font-size: 14px;
       }
@@ -42,13 +44,14 @@
       button {
         width: 100px;
         padding: 10px;
-        border: none;
+        border: 1px solid #fece51;
         cursor: pointer;
-        background-color: #fece51;
+        background-color:transparent;
   
         img {
           width: 24px;
           height: 24px;
+          
         }
       }
     }
